@@ -938,6 +938,14 @@ iframe.wait-autoplay {
     }
 }
 
+/**
+ * Custom
+ */
+
+.glightbox-mobile .glightbox-container .gslide-description {
+    display: none;
+}
+
 .glightbox-dark .gslide-description {
     background: #242629;
 }
