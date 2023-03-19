@@ -8,6 +8,8 @@
     <noscript>
         <link rel="stylesheet" href="assets/css/noscript.css"/>
     </noscript>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css"/>
+    <link rel="stylesheet" href="assets/css/custom.css"/>
 </head>
 <body class="is-preload">
 
@@ -27,64 +29,20 @@
     <!-- Main -->
     <div id="main">
         <article class="thumb">
-            <a href="images/fulls/01.jpg" class="image"><img src="images/thumbs/01.jpg" alt=""/></a>
-            <h2>Magna feugiat lorem</h2>
-            <p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
+            <a href="https://vimeo.com/56282283" class="image glightbox"
+               data-description="Test 1"
+               data-desc-position="bottom"
+               data-type="video"
+               data-effect="fade"><img src="images/thumbs/01.jpg" alt="Test 1"/></a>
+            <h2>Test 1</h2>
         </article>
         <article class="thumb">
-            <a href="images/fulls/02.jpg" class="image"><img src="images/thumbs/02.jpg" alt=""/></a>
-            <h2>Nisl adipiscing</h2>
-            <p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
-        </article>
-        <article class="thumb">
-            <a href="images/fulls/03.jpg" class="image"><img src="images/thumbs/03.jpg" alt=""/></a>
-            <h2>Tempus aliquam veroeros</h2>
-            <p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
-        </article>
-        <article class="thumb">
-            <a href="images/fulls/04.jpg" class="image"><img src="images/thumbs/04.jpg" alt=""/></a>
-            <h2>Aliquam ipsum sed dolore</h2>
-            <p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
-        </article>
-        <article class="thumb">
-            <a href="images/fulls/05.jpg" class="image"><img src="images/thumbs/05.jpg" alt=""/></a>
-            <h2>Cursis aliquam nisl</h2>
-            <p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
-        </article>
-        <article class="thumb">
-            <a href="images/fulls/06.jpg" class="image"><img src="images/thumbs/06.jpg" alt=""/></a>
-            <h2>Sed consequat phasellus</h2>
-            <p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
-        </article>
-        <article class="thumb">
-            <a href="images/fulls/07.jpg" class="image"><img src="images/thumbs/07.jpg" alt=""/></a>
-            <h2>Mauris id tellus arcu</h2>
-            <p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
-        </article>
-        <article class="thumb">
-            <a href="images/fulls/08.jpg" class="image"><img src="images/thumbs/08.jpg" alt=""/></a>
-            <h2>Nunc vehicula id nulla</h2>
-            <p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
-        </article>
-        <article class="thumb">
-            <a href="images/fulls/09.jpg" class="image"><img src="images/thumbs/09.jpg" alt=""/></a>
-            <h2>Neque et faucibus viverra</h2>
-            <p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
-        </article>
-        <article class="thumb">
-            <a href="images/fulls/10.jpg" class="image"><img src="images/thumbs/10.jpg" alt=""/></a>
-            <h2>Mattis ante fermentum</h2>
-            <p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
-        </article>
-        <article class="thumb">
-            <a href="images/fulls/11.jpg" class="image"><img src="images/thumbs/11.jpg" alt=""/></a>
-            <h2>Sed ac elementum arcu</h2>
-            <p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
-        </article>
-        <article class="thumb">
-            <a href="images/fulls/12.jpg" class="image"><img src="images/thumbs/12.jpg" alt=""/></a>
-            <h2>Vehicula id nulla dignissim</h2>
-            <p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
+            <a href="https://vimeo.com/56282283" class="image glightbox"
+               data-description="Test 2"
+               data-desc-position="bottom"
+               data-type="video"
+               data-effect="fade"><img src="images/thumbs/02.jpg" alt="Test 2"/></a>
+            <h2>Test 2</h2>
         </article>
     </div>
 
@@ -116,11 +74,39 @@
 
 <!-- Scripts -->
 <script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/jquery.poptrox.min.js"></script>
 <script src="assets/js/browser.min.js"></script>
 <script src="assets/js/breakpoints.min.js"></script>
 <script src="assets/js/util.js"></script>
 <script src="assets/js/main.js"></script>
-
+<script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+<script type="text/javascript">
+    const glightbox = GLightbox({
+        skin: 'dark',
+        draggable: false,
+        zoomable: false,
+        touchNavigation: false,
+        touchFollowAxis: false,
+        keyboardNavigation: false,
+        loop: false,
+        autoplayVideos: false,
+        moreLength: 0,
+        closeOnOutsideClick: false,
+        plyr: {
+            config: {
+                // ratio: '16:9',
+                hideControls: true,
+                settings: ["quality"],
+                vimeo: {
+                    byline: false,
+                    portrait: false,
+                    title: false,
+                    speed: false,
+                    transparent: true,
+                    playsinline: true
+                },
+            }
+        }
+    });
+</script>
 </body>
 </html>
