@@ -959,7 +959,6 @@ iframe.wait-autoplay {
 .glightbox-dark .gprev,
 .glightbox-dark .gnext,
 .glightbox-dark .gclose {
-    background-color: rgba(0, 0, 0, 0.75);
     border-radius: 4px;
 }
 
