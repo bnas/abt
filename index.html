@@ -110,7 +110,36 @@
         closeOnOutsideClick: false,
         plyr: {
             config: {
-                // ratio: '16:9',
+                ratio: '16:9',
+                hideControls: true,
+                settings: ["quality"],
+                vimeo: {
+                    byline: false,
+                    portrait: false,
+                    title: false,
+                    speed: false,
+                    transparent: true,
+                    controls: false,
+                    // playsinline: true
+                },
+            }
+        }
+    });
+    const glightboxVertical = GLightbox({
+        selector: '.glightbox-vertical',
+        skin: 'dark',
+        draggable: false,
+        zoomable: false,
+        touchNavigation: false,
+        touchFollowAxis: false,
+        keyboardNavigation: false,
+        loop: false,
+        autoplayVideos: false,
+        moreLength: 0,
+        closeOnOutsideClick: false,
+        plyr: {
+            config: {
+                ratio: '9:16',
                 hideControls: true,
                 settings: ["quality"],
                 vimeo: {
